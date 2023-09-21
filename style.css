@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  width: 375px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px 36px;
+}
+
+.logo {
+  width: 56px;
+  height: 24px;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+
+.soon {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 18px;
+  color: #969696;
+}
+.soon strong {
+  color: black;
+}
+
+.subs {
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 32px;
+  color: #15202a;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  width: 281px;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px 32px;
+  margin-bottom: 10px;
+  border: 1px solid #c2d3ff;
+}
+
+#input::placeholder {
+  color: #b8c7ed;
+  font-size: 12px;
+}
+
+#input:focus {
+  outline: none;
+  border: 1px solid #4c7bf3;
+}
+
+#input.inV {
+  border: 1px solid #ff5466;
+}
+
+.invalid {
+  display: none;
+  font-size: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #ff5466;
+}
+
+.notify {
+  width: 281px;
+  height: 40px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #4c7bf3;
+  border: none;
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+}
+
+.main {
+  width: 283.62px;
+  height: 179.82px;
+  margin-top: 72px;
+}
+
+.social {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 12.49px;
+  margin: 12.49px;
+}
+
+.social ul li {
+  list-style: none;
+  color: #4c7bf3;
+  width: 31px;
+  height: 31px;
+  text-align: center;
+  line-height: 31px;
+  border-radius: 50%;
+}
+.copy {
+  font-size: 10px;
+  margin-bottom: 37px;
+  color: #969696;
+}
+@media screen and (min-width: 376px) {
+  body {
+    width: 638px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 90px;
+    height: 39px;
+    object-fit: contain;
+    margin-bottom: 40px;
+  }
+
+  .soon {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 16px;
+  }
+
+  .subs {
+    font-size: 20px;
+  }
+
+  .area {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .notify {
+    width: 200px;
+    height: 56px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #4c7bf3;
+    border: none;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+    transform: translateY(-5px);
+    margin: 16px;
+    font-size: 16px;
+  }
+
+  #input {
+    width: 420px;
+    height: 56px;
+  }
+  #input::placeholder {
+    font-size: 16px;
+  }
+
+  .main {
+    width: 623.953px;
+    height: 394.451px;
+  }
+
+  .socila ul li i {
+    font-size: 1.2rem;
+  }
+  .copy {
+    font-size: 12px;
+    margin-bottom: 49px;
+    margin-top: 25px;
+    color: #969696;
+  }
+
+  .invalid {
+    position: absolute;
+    left: 35px;
+    top: 70px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #ff5466;
+  }
+}
